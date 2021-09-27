@@ -10,9 +10,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route excat path='/' component={Home} />
-        <Route excat path='/login' component={Login} />
-        <Route excat path='/singup' component={Signup} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/singup' component={Signup} />
         
       </Switch>
     </Router>
