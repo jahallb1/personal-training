@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -38,8 +39,6 @@ function Signup() {
               />
             </div>
           </div>
-
-          
           <div className="field">
             <label className="label">Password</label>
             <div className="control">
@@ -52,7 +51,9 @@ function Signup() {
               <input className="input" type="text" />
             </div>
           </div>
-          
+          <div className="has-text-right question">
+              <p>Have an account?  <Link to={"/login"}>Click me</Link>.</p>
+          </div>
         </div>
       </div>
     </div>
