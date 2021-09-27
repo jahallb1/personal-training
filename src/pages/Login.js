@@ -1,27 +1,37 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
+const titleHead = {
+    paddingTop: "1rem",
+}
 
 function Login() {
   return (
     <div>
-      <div className="columns">
-        <div className="column">
-            <h1>Welcome!</h1>
-          <div className="field">
-            <label className="label">Name</label>
-            <div className="control">
-              <input className="input" type="text" placeholder="e.g Alex Smith" />
-            </div>
+      <div className="columns is-mobile">
+        <div className="column is-half is-offset-one-quarter">
+          <div className="has-text-centered" style={titleHead}>
+            <h1 className="is-size-3">Welcome!</h1>
           </div>
-
           <div className="field">
             <label className="label">Email</label>
             <div className="control">
               <input
                 className="input"
-                type="email"
-                placeholder="e.g. alexsmith@gmail.com"
+                type="text"
+                placeholder="yourname@email.com"
               />
             </div>
+          </div>
+
+          <div className="field">
+            <label className="label">Password</label>
+            <div className="control">
+              <input className="input" type="password" />
+            </div>
+          </div>
+          <div className="has-text-right question">
+              <p>Don't have an account?  <Link to={"/signup"}>Click me</Link> to make one.</p>
           </div>
         </div>
       </div>
@@ -30,3 +40,5 @@ function Login() {
 }
 
 export default Login;
+
+  
