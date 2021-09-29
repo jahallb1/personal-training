@@ -33,6 +33,7 @@ function Login() {
           <div className="has-text-right question">
               <p>Don't have an account?  <Link to={"/signup"}>Click me</Link> to make one.</p>
           </div>
+          <button className="btn is-primary">Login</button>
         </div>
       </div>
     </div>
