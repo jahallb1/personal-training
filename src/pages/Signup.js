@@ -54,6 +54,8 @@ function Signup() {
           <div className="has-text-right question">
               <p>Have an account?  <Link to={"/login"}>Click me</Link>.</p>
           </div>
+          <button className="btn is-primary">Signup</button>
+          <button className="btn is-warning">Cancel</button>
         </div>
       </div>
     </div>
