@@ -34,6 +34,7 @@ function Login() {
               <p>Don't have an account?  <Link to={"/signup"}>Click me</Link> to make one.</p>
           </div>
           <button className="btn is-primary">Login</button>
+          <button className="btn is-warning">Cancel</button>
         </div>
       </div>
     </div>
